@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+require('dotenv').config()
 
 app.use(express.static('client/build'));
 
@@ -9,6 +10,6 @@ app.get("*",(req,res)=>{
 })
 
 
-app.listen(8000,()=>{
-    console.log("app listening on 8000");
+app.listen(8000 || process.env.PORT,()=>{
+    console.log("app listening on "+PORT);
 })
