@@ -4,6 +4,7 @@ import Header from './header/header';
 import HeaderRight from './header/HeaderRight';
 import Left from './left/LeftPanel';
 import Main from './main/Main';
+import Right from './right/Right';
 
 
 const Dashboard = () => {
@@ -18,6 +19,7 @@ const Dashboard = () => {
             </div>
             <div className="right_container">
                     <HeaderRight />
+                    <Right />
             </div>
         </div>
     )
